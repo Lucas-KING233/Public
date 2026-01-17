@@ -1,0 +1,11 @@
+下载地址
+#下载openwrt原版官方镜像（原版-极度精简）
+https://firmware-selector.openwrt.org/
+
+#下载immortal官方镜像（中国分支，支持好-精简）
+https://fwselector.kyarucloud.moe/
+
+#openwrt自定义编译无脑一键定义配置（高度自定义，常用安装包融合）
+https://openwrt.ai/?target=rockchip%2Farmv8&id=friendlyarm_nanopi-r2s
+#istoreos小白，界面美观特别方便
+https://site.istoreos.com/firmware/download?devicename=r2s
