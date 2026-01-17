@@ -1,0 +1,23 @@
+#安装原版openwrt最精简，但是opkg不含常用的翻墙软件，手动去作者github地址看说明添加源命令安装，或者下载上传安装
+#更新
+opkg update
+#装中文界面
+opkg install luci-i18n-base-zh-cn
+#检查 overlay 是否已扩容
+df -h
+
+#常用的镜像源
+src/gz openwrt_core https://downloads.openwrt.org/releases/24.10.5/targets/rockchip/armv8/packages
+src/gz openwrt_base https://downloads.openwrt.org/releases/24.10.5/packages/aarch64_generic/base
+src/gz openwrt_kmods https://downloads.openwrt.org/releases/24.10.5/targets/rockchip/armv8/kmods/6.6.119-1-77d4782035a23e6f19f9c4751451b4e3
+src/gz openwrt_luci https://downloads.openwrt.org/releases/24.10.5/packages/aarch64_generic/luci
+src/gz openwrt_packages https://downloads.openwrt.org/releases/24.10.5/packages/aarch64_generic/packages
+src/gz openwrt_routing https://downloads.openwrt.org/releases/24.10.5/packages/aarch64_generic/routing
+src/gz openwrt_telephony https://downloads.openwrt.org/releases/24.10.5/packages/aarch64_generic/telephony
+
+#常用的镜像源替换   
+#将地址中“downloads.openwrt.org”替换为
+中科大mirrors.ustc.edu.cn
+清华mirrors.tuna.tsinghua.edu.cn
+阿里云mirrors.aliyun.com
+华为云mirrors.huaweicloud.com
